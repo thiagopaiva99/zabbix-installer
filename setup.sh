@@ -30,12 +30,6 @@ while getopts 'p:' opt ; do
   esac
 done
 
-if [ $PASSWORD -e '' ] ; then
-  echo "O parametro -p (password) precisa ser informado"
-
-  exit 1
-fi
-
 # atualiza os repositorios do sistema
 apt-get update
 
